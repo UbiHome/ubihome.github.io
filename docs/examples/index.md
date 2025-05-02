@@ -1,4 +1,7 @@
-# Overiew of all Examples
+# Examples
+
+Here you can find some examples for using UbiHome.
+Parts of it are just shared configuration files you could reuse for you purposes - others are full blown guides.
 
 <ul>
   {% for nav1 in navigation %}
