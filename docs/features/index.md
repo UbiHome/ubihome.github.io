@@ -1,6 +1,6 @@
 # Features
 
-OSHome is built in a modular way. Currently the following modules are available:
+UbiHome is built in a modular way. Currently the following modules are available:
 
 <div class="grid cards" markdown>
 

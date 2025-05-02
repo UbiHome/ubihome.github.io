@@ -1,7 +1,7 @@
-site_name: OSHome
-repo_url: https://github.com/DanielHabenicht/OSHome
+site_name: UbiHome
+repo_url: https://github.com/UbiHome/UbiHome
 extra:
-  homepage: https://danielhabenicht.github.io/OSHome/
+  homepage: https://ubihome.github.io/
 plugins:
   - search
   - social

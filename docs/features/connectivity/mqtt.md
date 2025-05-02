@@ -21,10 +21,10 @@ mqtt:
   password: <your_password>
   discovery: true
   discovery_prefix: homeassistant
-  topic_prefix: oshome
+  topic_prefix: ubihome
 ```
 
-This will connect to your MQTT broker and send all sensor updates to the `oshome/sensor/<sensor_name>` topic. It will also listen for actions on the `oshome/action/<action_name>` topic.
+This will connect to your MQTT broker and send all sensor updates to the `ubihome/sensor/<sensor_name>` topic. It will also listen for actions on the `ubihome/action/<action_name>` topic.
 
 ## Device Discovery
 

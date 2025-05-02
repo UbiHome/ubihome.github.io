@@ -4,9 +4,9 @@ hide:
   - toc
 ---
 
-# Welcome to OSHome!
+# Welcome to UbiHome!
 
-OSHome is a single executable that allows you to integrate any device running an OS into your smart home. 
+UbiHome is a single executable that allows you to integrate any device running an OS into your smart home. 
 It is designed to be lightweight and easy to use - similar to ESPHome.
 
 - Execute a command on a device based on a trigger in home assistant. 
@@ -15,23 +15,23 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
 
 See the [getting started](getting_started/index.md) guide for installation instructions.
 
-Explore the [examples](examples/index.md) to see how to use OSHome.
+Explore the [examples](examples/index.md) to see how to use UbiHome.
 
 <!-- x-release-please-start-version -->
 
 ```bash
-pi@raspberrypi:~/ $ oshome
-OSHome - 0.4.7
+pi@raspberrypi:~/ $ ubihome
+UbiHome - 0.4.7
 
-OSHome is a system which allows you to integrate any device running an OS into your smart home.
-https://github.com/DanielHabenicht/OSHome
+UbiHome is a system which allows you to integrate any device running an OS into your smart home.
+https://github.com/UbiHome/UbiHome
 
-Usage: oshome [OPTIONS] <COMMAND>
+Usage: ubihome [OPTIONS] <COMMAND>
 
 Commands:
-  install    Install OSHome
-  uninstall  Uninstall OSHome
-  run        Run OSHome manually.
+  install    Install UbiHome
+  uninstall  Uninstall UbiHome
+  run        Run UbiHome manually.
   help       Print this message or the help of the given subcommand(s)
 
 Options:
