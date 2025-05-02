@@ -1,0 +1,25 @@
+name: docs
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version'
+        type: string
+
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - run: find ./ -type f -name \*.md -exec sed -i -E 's/v([0-9]+\.[0-9]+\.[0-9]+)/${{ github.event.inputs.version }}/g' {} \;
+      - run: git diff
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Update version to ${{ github.event.inputs.version }}"

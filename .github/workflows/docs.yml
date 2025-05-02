@@ -6,12 +6,6 @@ on:
     paths:
       - documentation/**
       - .github/workflows/docs.yml
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Version'
-        type: string
-
         
 permissions:
   contents: write
