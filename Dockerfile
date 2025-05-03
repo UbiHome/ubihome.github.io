@@ -4,4 +4,5 @@ RUN pip install --upgrade \
       pillow \
       cairosvg \
       mkdocs-awesome-nav \
-      mkdocs-macros-plugin
+      mkdocs-macros-plugin \
+      mkdocs-git-revision-date-localized-plugin

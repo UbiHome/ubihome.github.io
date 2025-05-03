@@ -1,5 +1,7 @@
 site_name: UbiHome
-repo_url: https://github.com/UbiHome/UbiHome
+site_url: https://ubihome.github.io
+edit_uri: edit/main/docs/
+repo_url: https://github.com/UbiHome/ubihome.github.io
 strict: true
 extra:
   homepage: https://ubihome.github.io/
@@ -10,6 +12,8 @@ plugins:
   - awesome-nav
   - macros
   - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 
 theme:
@@ -59,6 +63,7 @@ theme:
     - content.tabs.link
     - content.tooltips
     - content.footnote.tooltips
+    - content.action.edit
 markdown_extensions:
   - pymdownx.snippets:
       check_paths: true
