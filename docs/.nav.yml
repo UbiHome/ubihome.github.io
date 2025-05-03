@@ -6,11 +6,14 @@ nav:
     - Connectivity:
       - features/connectivity/index.md
       - features/connectivity/*
-    - Components:
-      - features/components/index.md
-      - features/components/*
     - Platforms:
       - features/platforms/index.md
       - features/platforms/*
+    - Components:
+      - features/components/index.md
+      - features/components/*
+    - Utilities:
+      - features/utilities/index.md
+      - features/utilities/*
   - Examples:
     - "examples/*"

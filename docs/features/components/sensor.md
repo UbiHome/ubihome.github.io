@@ -16,5 +16,6 @@ sensor:
 ```
 
 
+Similar to ESPHome:
 
-<!-- Reference: https://esphome.io/components/sensor/ -->
+ - https://esphome.io/components/sensor/

@@ -1,5 +1,11 @@
 # MDNS
 
-TBD
+```yaml
+mdns:
 
-<!-- Reference: https://esphome.io/components/mdns.html -->
+
+```
+
+Similar to ESPHome:
+
+ - [https://esphome.io/components/mdns.html](https://esphome.io/components/mdns.html)

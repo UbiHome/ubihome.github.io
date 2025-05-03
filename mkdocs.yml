@@ -1,5 +1,6 @@
 site_name: UbiHome
 repo_url: https://github.com/UbiHome/UbiHome
+strict: true
 extra:
   homepage: https://ubihome.github.io/
 plugins:

@@ -30,4 +30,6 @@ This will connect to your MQTT broker and send all sensor updates to the `ubihom
 
 Device Discovery is enabled by default, so the device will automatically be discovered by Home Assistant. You can find the device in the MQTT integration in Home Assistant.
 
-<!-- For reference: https://esphome.io/components/mqtt.html -->
+Similar to ESPHome:
+
+ - https://esphome.io/components/mqtt.html

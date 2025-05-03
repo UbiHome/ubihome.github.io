@@ -2,6 +2,14 @@
 
 <div class="grid cards" markdown>
 
+-   :material-server-network:{ .lg .middle } [__Native API__](./native_api.md)
+
+    ---
+
+    Use ESPHome's native API to connect to your device
+
+    [:octicons-arrow-right-24: See Documentation](./native_api.md)
+    
 -   :simple-mqtt:{ .lg .middle } [__MQTT__](./mqtt.md)
 
     ---
@@ -10,22 +18,31 @@
 
     [:octicons-arrow-right-24: See Documentation](./mqtt.md)
 
-<!-- -   :material-format-font:{ .lg .middle } __Actions__
+
+-  :material-dns:{ .lg .middle } __MDNS__
 
     ---
 
-    Trigger an action via the web server, REST API or MQTT. Use the built-in actions or create your own.
+    Advertise the device and its services via mDNS. 
 
-    
+    [:octicons-arrow-right-24: See Documentation](./mdns.md)
 
-    [:octicons-arrow-right-24: Start now](./actions/index.md)
-
--   :material-scale-balance:{ .lg .middle } __More?__
+-  :material-webhook:{ .lg .middle } __Web Server (REST API)__
 
     ---
+    Not yet implemented!
 
-    More is coming soon.
+    Trigger an action via the web server and it's REST API.
 
-    [:octicons-arrow-right-24: License](#) -->
+    [:octicons-arrow-right-24: See Documentation](./web_server.md)
+
+-  :material-web:{ .lg .middle } __HTTP__
+
+    ---
+    Not yet implemented!
+
+    Call any HTTP endpoint to trigger.
+
+    [:octicons-arrow-right-24: See Documentation](./http.md)
 
 </div>

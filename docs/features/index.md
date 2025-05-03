@@ -1,40 +1,40 @@
 # Features
 
-UbiHome is built in a modular way. Currently the following modules are available:
+UbiHome is built in a modular way. The modules can be split into the following categories:
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Connectivity__
+-   :material-wifi-cog:{ .lg .middle } __Connectivity__
 
     ---
 
-    Connect with Home Assistant (via MQTT), REST API or simply use the built-in web server.
+    Connect with Home Assistant via the native API, use MQTT or the the built-in web server (REST API).
 
     [:octicons-arrow-right-24: Getting started](./connectivity/index.md)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __Sensors__
+-   :material-layers-triple:{ .lg .middle } __Platforms__
 
     ---
 
-    Retrieve values or trigger an action.
+    Use the built-in platforms to access and control a devices sensor, a program, GPIO or create your own. 
 
-    [:octicons-arrow-right-24: Get started](./components/index.md)
+    [:octicons-arrow-right-24: Getting started](./platforms/index.md)
 
-
--   :material-scale-balance:{ .lg .middle } __Platforms__
-
-    ---
-
-    Use the built-in platforms (shell) or create your own. 
-
-    <!-- [:octicons-arrow-right-24: License](#) -->
-
--   :material-scale-balance:{ .lg .middle } __More?__
+-   :material-motion-sensor:{ .lg .middle } __Sensors & Actions__
 
     ---
 
-    More is coming soon.
+    Make the data or actions available in a structured way, as sensor, button or switch.
 
-    <!-- [:octicons-arrow-right-24: License](#) -->
+    [:octicons-arrow-right-24: Getting started](./components/index.md)
+
+
+-   :material-wrench-cog:{ .lg .middle } __Utilities__
+
+    ---
+
+    Stuck at configuring something? Use the built-in utilities to help you out.
+
+    [:octicons-arrow-right-24: Getting started](./utilities/index.md)
 
 </div>

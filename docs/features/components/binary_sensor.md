@@ -2,4 +2,6 @@
 
 TBD
 
-<!-- https://esphome.io/components/binary_sensor/ -->
+Similar to ESPHome:
+
+ - https://esphome.io/components/binary_sensor/
