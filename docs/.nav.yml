@@ -12,6 +12,8 @@ nav:
     - Components:
       - features/components/index.md
       - features/components/*
+      - features/components/actions.md
+      - features/components/filters.md
     - Utilities:
       - features/utilities/index.md
       - features/utilities/*
