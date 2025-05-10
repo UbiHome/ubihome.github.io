@@ -1,10 +1,7 @@
-oshome:
-  name: new_awesome
+ubihome:
+  name: New Awesome UbiHome Device
 
-mqtt:
-  broker: 192.168.178.167
-  username: test
-  password: a887aeda-7248-4b0f-a2e7-6f4ee0026f5e
+api:
 
 shell:
 
@@ -21,6 +18,6 @@ sensor:
     icon: mdi:memory
     state_class: 'measurement'
     unit_of_measurement: '%'
-    update_interval: 30s # 0 only executes it once and assumes a long running processes.
+    update_interval: 30s
     command: |-
       Get-WmiObject Win32_OperatingSystem -Property * | % {([math]::Round(($_.FreePhysicalMemory)/$_.totalvisiblememorysize,2))}
