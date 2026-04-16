@@ -1,0 +1,1 @@
+{"mappings": [{"item": {"url": "features/platforms/bme280.html", "title": "BME280"}, "tags": ["Humidity", "I2C", "Pressure", "Temperature"]}, {"item": {"url": "features/platforms/illuminance.html", "title": "Illuminance Sensor"}, "tags": ["Illuminance", "Linux", "Windows"]}]}

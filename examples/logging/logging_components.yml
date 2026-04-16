@@ -1,0 +1,4 @@
+logger:
+  level: INFO
+  logs:
+    ubihome_api: debug
