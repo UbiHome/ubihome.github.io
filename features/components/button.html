@@ -1137,7 +1137,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
   <span class="md-ellipsis">
     
   
-    Common Properties
+    Common Component Properties
   
 
     
@@ -1195,6 +1195,24 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Button
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="button.html" class="md-nav__link md-nav__link--active">
         
   
@@ -1211,6 +1229,69 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Filters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#used-in-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Used in Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2365,6 +2446,58 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Filters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#used-in-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Used in Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2389,17 +2522,78 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
 
 
 <h1 id="button">Button<a class="headerlink" href="#button" title="Permanent link">&para;</a></h1>
-<div class="language-yaml highlight"><span class="filename">Base Example</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">button</span><span class="p">:</span><span class="w"> </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"> </span><span class="c1">#(1)!</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Write</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">World&quot;</span>
+<div class="language-yaml highlight"><span class="filename">Base Example</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">button</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">platform</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"> </span><span class="c1">#(1)!</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Write</span><span class="nv"> </span><span class="s">Hello</span><span class="nv"> </span><span class="s">World&quot;</span>
 </span></code></pre></div>
 <ol>
-<li>Here the <a href="../platforms/index.html">plaform</a> must be defined. </li>
+<li>Here the <a href="../platforms/index.html">platform</a> must be defined.</li>
 </ol>
-<p>Similar to ESPHome:</p>
+<div class="admonition info">
+<p class="admonition-title">Platform-specific properties</p>
+<p>Each platform requires additional properties not shown above. Check the <a href="../platforms/index.html">Platforms documentation</a> and the page for your chosen platform for the full list of required and optional options.</p>
+</div>
+<h2 id="attributes">Attributes<a class="headerlink" href="#attributes" title="Permanent link">&para;</a></h2>
+<p>Common attributes are documented in <a href="base.html">Common Component Properties</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>(none)</em></td>
+<td>Button currently has no additional component-specific attributes.</td>
+<td><em>(n/a)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-filters">Supported Filters<a class="headerlink" href="#supported-filters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>(none)</em></td>
+<td>Button does not currently support filters.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-platforms">Supported Platforms<a class="headerlink" href="#supported-platforms" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../platforms/shell.html">Shell</a></td>
+<td>Triggers a command when the button is pressed.</td>
+</tr>
+<tr>
+<td><a href="../platforms/power_utils.html">Power Utilities</a></td>
+<td>Triggers device power actions (shutdown/reboot/etc.).</td>
+</tr>
+</tbody>
+</table>
+<p>For platform-specific configuration options, use the linked platform pages.</p>
+<h2 id="used-in-examples">Used in Examples<a class="headerlink" href="#used-in-examples" title="Permanent link">&para;</a></h2>
 <ul>
-<li>https://esphome.io/components/button/</li>
+<li><a href="../../examples/open_chrome_tab/index.html">Open a new tab in chrome</a></li>
+<li><a href="../../examples/display_notification/index.html">Display a Notification</a></li>
+<li><a href="../../examples/stop_reboot/index.html">Stop or reboot your system</a></li>
+<li><a href="../../examples/bluetooth_monitor_control/index.html">Monitor and control Bluetooth devices</a></li>
 </ul>
+<p>Similar to ESPHome: <a href="https://esphome.io/components/button/">Button</a></p>
 
 
 

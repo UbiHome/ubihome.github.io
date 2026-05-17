@@ -29,7 +29,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
     
     
       
-        <title>Common Properties - UbiHome</title>
+        <title>Common Component Properties - UbiHome</title>
       
     
     
@@ -83,7 +83,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Common Properties - UbiHome" />
+<meta property="og:title" content="Common Component Properties - UbiHome" />
 <meta property="og:description" content="UbiHome is a single executable that allows you to integrate any device running an OS into your smart home. 
 It is designed to be lightweight and easy to use - similar to ESPHome.
 " />
@@ -93,7 +93,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
 <meta property="og:image:height" content="630" />
 <meta property="og:url" content="https://ubihome.github.io/features/components/base.html" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Common Properties - UbiHome" />
+<meta property="twitter:title" content="Common Component Properties - UbiHome" />
 <meta property="twitter:description" content="UbiHome is a single executable that allows you to integrate any device running an OS into your smart home. 
 It is designed to be lightweight and easy to use - similar to ESPHome.
 " />
@@ -117,7 +117,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
     <div data-md-component="skip">
       
         
-        <a href="#common-properties" class="md-skip">
+        <a href="#common-component-properties" class="md-skip">
           Skip to content
         </a>
       
@@ -150,7 +150,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Common Properties
+              Common Component Properties
             
           </span>
         </div>
@@ -1146,7 +1146,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
   <span class="md-ellipsis">
     
   
-    Common Properties
+    Common Component Properties
   
 
     
@@ -2388,15 +2388,39 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
   
 
 
-<h1 id="common-properties">Common Properties<a class="headerlink" href="#common-properties" title="Permanent link">&para;</a></h1>
-<p>These properties are available on all platforms.</p>
-<ul>
-<li><code>name</code> (string, optional): The friendly name of the entity.</li>
-<li><code>id</code> (string, optional): The unique identifier for the entity. If not provided, one will be generated.</li>
-<li><code>icon</code> (string, optional): The icon to represent the entity in the UI.</li>
-</ul>
-<p>TODO: DeviceClass https://www.home-assistant.io/integrations/sensor/#device-class
-TODO: EntityCategory: https://developers.home-assistant.io/docs/core/entity/#generic-properties</p>
+<h1 id="common-component-properties">Common Component Properties<a class="headerlink" href="#common-component-properties" title="Permanent link">&para;</a></h1>
+<p>These properties are available on all components.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Friendly display name for the component.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>No</td>
+<td>Unique identifier. If omitted, one is generated from <code>name</code>.</td>
+</tr>
+<tr>
+<td><code>icon</code></td>
+<td>string</td>
+<td>No</td>
+<td>Icon used in Home Assistant and related UIs.</td>
+</tr>
+</tbody>
+</table>
+<p>Additional attributes such as <code>device_class</code> or <code>entity_category</code> are component-specific and documented on each component page.</p>
 
 
 

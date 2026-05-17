@@ -1137,7 +1137,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
   <span class="md-ellipsis">
     
   
-    Common Properties
+    Common Component Properties
   
 
     
@@ -1251,6 +1251,24 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensor
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="sensor.html" class="md-nav__link md-nav__link--active">
         
   
@@ -1267,6 +1285,69 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Filters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#used-in-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Used in Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2365,6 +2446,58 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Filters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#used-in-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Used in Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2394,17 +2527,97 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My</span><span class="nv"> </span><span class="s">Sensor&quot;</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ram_usage</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdi:memory</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="c1"># device_class: &quot;data_size&quot;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">state_class</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;measurement&quot;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">device_class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_size</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">state_class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">measurement</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">unit_of_measurement</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;%&quot;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nt">accuracy_decimals</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 </span></code></pre></div>
 <ol>
-<li>Here the <a href="../platforms/index.html">plaform</a> must be defined. </li>
+<li>Here the <a href="../platforms/index.html">platform</a> must be defined.</li>
 </ol>
-<p>Similar to ESPHome:</p>
+<div class="admonition info">
+<p class="admonition-title">Platform-specific properties</p>
+<p>Each platform requires additional properties not shown above. Check the <a href="../platforms/index.html">Platforms documentation</a> and the page for your chosen platform for the full list of required and optional options.</p>
+</div>
+<h2 id="attributes">Attributes<a class="headerlink" href="#attributes" title="Permanent link">&para;</a></h2>
+<p>Common attributes are documented in <a href="base.html">Common Component Properties</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>device_class</code></td>
+<td>Home Assistant device classification for the sensor value.</td>
+<td><code>data_size</code></td>
+</tr>
+<tr>
+<td><code>state_class</code></td>
+<td>Home Assistant state class (for example <code>measurement</code>).</td>
+<td><code>measurement</code></td>
+</tr>
+<tr>
+<td><code>unit_of_measurement</code></td>
+<td>Unit shown in user interfaces (for example <code>%</code>, <code>°C</code>, <code>Pa</code>).</td>
+<td><code>%</code></td>
+</tr>
+<tr>
+<td><code>accuracy_decimals</code></td>
+<td>Number of decimals reported for the sensor value.</td>
+<td><code>2</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-filters">Supported Filters<a class="headerlink" href="#supported-filters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="filters.html#round"><code>round</code></a></td>
+<td>Rounds numeric sensor values to the configured decimal precision.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-platforms">Supported Platforms<a class="headerlink" href="#supported-platforms" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../platforms/shell.html">Shell</a></td>
+<td>Reads sensor values from command output.</td>
+</tr>
+<tr>
+<td><a href="../platforms/bme280.html">BME280</a></td>
+<td>Exposes temperature, pressure, and humidity as sensor components.</td>
+</tr>
+<tr>
+<td><a href="../platforms/illuminance.html">Illuminance</a></td>
+<td>Exposes ambient light as a sensor component.</td>
+</tr>
+</tbody>
+</table>
+<p>For platform-specific configuration options, use the linked platform pages.</p>
+<h2 id="used-in-examples">Used in Examples<a class="headerlink" href="#used-in-examples" title="Permanent link">&para;</a></h2>
 <ul>
-<li>https://esphome.io/components/sensor/</li>
+<li><a href="../../examples/system_ressources/index.html">Monitor system resources</a></li>
+<li><a href="../../examples/measure_temperature/index.html">Measure Temperature, Humidity and Pressure with BME280</a></li>
+<li><a href="../../examples/illuminance/index.html">Report your laptop's ambient light sensor</a></li>
 </ul>
+<p>Similar to ESPHome: <a href="https://esphome.io/components/sensor/">Sensor</a></p>
 
 
 

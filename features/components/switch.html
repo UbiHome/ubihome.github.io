@@ -1137,7 +1137,7 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
   <span class="md-ellipsis">
     
   
-    Common Properties
+    Common Component Properties
   
 
     
@@ -1279,6 +1279,24 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="switch.html" class="md-nav__link md-nav__link--active">
         
   
@@ -1295,6 +1313,80 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Filters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#used-in-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Used in Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-platform-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shell Platform Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2365,6 +2457,69 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Filters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#used-in-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Used in Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-platform-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shell Platform Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2394,12 +2549,70 @@ It is designed to be lightweight and easy to use - similar to ESPHome.
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My</span><span class="nv"> </span><span class="s">Switch&quot;</span>
 </span></code></pre></div>
 <ol>
-<li>Here the <a href="../platforms/index.html">plaform</a> must be defined. </li>
+<li>Here the <a href="../platforms/index.html">platform</a> must be defined.</li>
 </ol>
-<p>Similar to ESPHome:</p>
+<div class="admonition info">
+<p class="admonition-title">Platform-specific properties</p>
+<p>Each platform requires additional properties not shown above. Check the <a href="../platforms/index.html">Platforms documentation</a> and the page for your chosen platform for the full list of required and optional options.</p>
+</div>
+<h2 id="attributes">Attributes<a class="headerlink" href="#attributes" title="Permanent link">&para;</a></h2>
+<p>Common attributes are documented in <a href="base.html">Common Component Properties</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>device_class</code></td>
+<td>Home Assistant switch classification.</td>
+<td><code>outlet</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-filters">Supported Filters<a class="headerlink" href="#supported-filters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>(none)</em></td>
+<td>Switch does not currently support filters.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-platforms">Supported Platforms<a class="headerlink" href="#supported-platforms" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../platforms/shell.html">Shell</a></td>
+<td>Uses <code>command_on</code> and <code>command_off</code>; optional <code>command_state</code> for state polling.</td>
+</tr>
+</tbody>
+</table>
+<p>For platform-specific configuration options, use the linked platform pages.</p>
+<h2 id="used-in-examples">Used in Examples<a class="headerlink" href="#used-in-examples" title="Permanent link">&para;</a></h2>
 <ul>
-<li>https://esphome.io/components/switch/index.html</li>
+<li><a href="../../examples/screen_on_off/index.html">Turn Raspberry screen on or off</a></li>
+<li><a href="../../examples/automatic_screen_power_control/index.html">Automatic Screen Power Control</a></li>
 </ul>
+<h2 id="shell-platform-notes">Shell Platform Notes<a class="headerlink" href="#shell-platform-notes" title="Permanent link">&para;</a></h2>
+<p>For full shell switch setup, see <a href="../platforms/shell.html#switch">Shell platform documentation</a>.</p>
+<p>When using <code>command_state</code>, the command output must resolve to <code>true</code> or <code>false</code>.</p>
+<p>Similar to ESPHome: <a href="https://esphome.io/components/switch/index.html">Switch</a></p>
 
 
 
